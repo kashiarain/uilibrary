@@ -5,615 +5,1431 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../style.css" />
-  </head>
 
-  <body class="bg-slate-900 text-white">
-    <header class="border-b border-slate-700 bg-slate-950">
-      <nav class="container mx-auto flex h-14 items-center justify-between">
-        <h2><a href="/" class="text-xl">Website</a></h2>
-        <ul class="flex gap-4">
+    <style>
+      #autoRemove {
+        height: 3px;
+        background: purple;
+        animation: remove 9s ease-in-out;
+        width: 0%;
+      }
+      @keyframes remove {
+        from {
+          width: 100%;
+        }
+        to {
+          width: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-cyan-800 text-cyan-200">
+    <header class="bg-cyan-950">
+      <nav class="container mx-auto h-14 px-5"></nav>
+    </header>
+    <div class="flex">
+      <aside
+        class="min-w-72 select-none overflow-y-scroll bg-cyan-800"
+        style="height: calc(100vh-56px)"
+      >
+        <ul class="">
           <li>
-            <a href="/" class="hover:text-orange-400">Home</a>
+            <a href="#" class="my-1 block bg-cyan-950 px-4 py-2">Alerts</a>
           </li>
           <li>
-            <a
-              href="./components"
-              class="rounded-md px-4 py-1.5 text-orange-400 shadow-sm shadow-orange-400 transition hover:shadow-md hover:shadow-orange-400"
-              >Components</a
+            <a href="#" class="my-1 block px-4 py-2 hover:bg-cyan-950"
+              >Buttons</a
             >
           </li>
           <li>
-            <a href="/" class="hover:text-orange-400">Sections</a>
+            <a href="#" class="mx-1 block px-4 py-2 hover:bg-cyan-950">Card</a>
           </li>
           <li>
-            <a href="/" class="hover:text-orange-400">Layouts</a>
+            <a href="#" class="mx-1 block px-4 py-2 hover:bg-cyan-950"
+              >Tables</a
+            >
           </li>
           <li>
-            <a href="/" class="hover:text-orange-400">Themes</a>
+            <a href="#" class="mx-1 block px-4 py-2 hover:bg-cyan-950">Lists</a>
           </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="flex">
-      <aside class="h-dvh min-w-48 overflow-y-scroll bg-slate-950">
-        <ul>
-          <li class="text-orange-400 shadow-sm shadow-orange-400 transition">
-            <a href="./alerts.html" class="block px-4 py-2">Alerts</a>
+          <li>
+            <a href="#" class="mx-1 block px-4 py-2 hover:bg-cyan-950">Pages</a>
           </li>
-          <li class="shadow-sm shadow-white hover:text-orange-400">
-            <a href="./buttons.html" class="block px-3 py-2">Buttons</a>
+          <li>
+            <a href="#" class="mx-1 block px-4 py-2 hover:bg-cyan-950">Sites</a>
           </li>
-          <li class="shadow-sm shadow-white hover:text-orange-400">
-            <a href="./lists.html" class="block px-3 py-2">Lists</a>
+          <li>
+            <a href="#" class="mx-1 block px-4 py-2 hover:bg-cyan-950"
+              >Elements</a
+            >
           </li>
-          <li class="shadow-sm shadow-white hover:text-orange-400">
-            <a href="./chips.html" class="block px-3 py-2">Chips</a>
-          </li>
-          <li class="shadow-sm shadow-white hover:text-orange-400">
-            <a href="./cards.html" class="block px-3 py-2">Cards</a>
+          <li>
+            <a href="#" class="mx-1 block px-4 py-2 hover:bg-cyan-950"
+              >Others</a
+            >
           </li>
         </ul>
       </aside>
-      <main class="container mx-auto h-dvh overflow-y-scroll px-5">
-        <h2 class="text-2xl font-semibold text-white">Simple Alerts</h2>
-        <section class="my-2 *:my-5 *:rounded-md *:border *:py-3 *:pl-4 *:pr-6">
-          <div class="border-gray-50 bg-gray-600 text-gray-50">
-            A simple light alert—check it out!
+      <main
+        class="container mx-auto min-w-72 grow overflow-y-scroll bg-cyan-800 px-5"
+        style="height: calc(100vh-56px)"
+      >
+        <h2 class="text-2xl font-semibold">Simple Alerts:</h2>
+        <section class="*:mx-3 *:my-2 *:border *:border-solid *:px-4 *:py-2">
+          <div class="bg-cyan-800 text-cyan-200">This is an alert!</div>
+          <div class="bg-cyan-500 text-cyan-800">This is an alert!</div>
+          <div class="bg-gray-400 text-gray-200">This is an alert!</div>
+          <div class="bg-cyan-100 text-cyan-400">This is an alert!</div>
+          <div class="bg-black text-white">This is an alert!</div>
+        </section>
+        <h2 class="text-2xl font-semibold">Symbol Alerts:</h2>
+        <section class="*:mx-3 *:my-2 *:border *:border-solid *:px-4 *:py-2">
+          <div class="border-yellow-200 bg-yellow-800 text-yellow-200">
+            This is an alert!
           </div>
-          <div class="border-slate-300 bg-slate-900 text-slate-300">
-            A simple dark alert—check it out!
+          <div class="border-cyan-200 bg-cyan-500 text-cyan-800">
+            This is an alert!
           </div>
-          <div class="border-white bg-black text-white">
-            A simple contrast alert—check it out!
+          <div class="border-rose-200 bg-rose-800 text-gray-200">
+            This is an alert!
           </div>
-          <div class="border-cyan-50 bg-cyan-600 text-cyan-50">
-            A simple info alert—check it out!
+          <div class="border-green-200 bg-green-800 text-green-200">
+            This is an alert!
           </div>
-          <div class="border-yellow-50 bg-yellow-600 text-yellow-50">
-            A simple warning alert—check it out!
-          </div>
-          <div class="border-green-50 bg-green-600 text-green-50">
-            A simple success alert—check it out!
-          </div>
-          <div class="border-rose-50 bg-rose-600 text-rose-50">
-            A simple error alert—check it out!
+          <div class="border-indigo-200 bg-indigo-800 text-indigo-200">
+            This is an alert!
           </div>
         </section>
-
-        <h2 class="text-2xl font-semibold text-white">Outline Alerts</h2>
-        <section class="my-2 *:my-5 *:rounded-md *:border *:py-3 *:pl-4 *:pr-6">
-          <div class="border-gray-600 bg-gray-50 text-gray-600">
-            A simple light alert—check it out!
+        <h2 class="text-2xl font-semibold">Outline Alerts:</h2>
+        <section class="*:mx-3 *:my-2 *:border *:border-solid *:px-4 *:py-2">
+          <div class="border-yellow-800 bg-yellow-200 text-yellow-800">
+            This is an alert!
           </div>
-          <div class="border-slate-900 bg-slate-300 text-slate-900">
-            A simple dark alert—check it out!
+          <div class="border-cyan-800 bg-cyan-200 text-cyan-800">
+            This is an alert!
           </div>
-          <div class="border-black bg-white text-black">
-            A simple contrast alert—check it out!
+          <div class="border-rose-800 bg-rose-200 text-rose-800">
+            This is an alert!
           </div>
-          <div class="border-cyan-600 bg-cyan-50 text-cyan-600">
-            A simple info alert—check it out!
+          <div class="border-green-800 bg-green-200 text-green-800">
+            This is an alert!
           </div>
-          <div class="border-yellow-600 bg-yellow-50 text-yellow-600">
-            A simple info alert—check it out!
-          </div>
-          <div class="border-green-600 bg-green-50 text-green-600">
-            A simple success alert—check it out!
-          </div>
-          <div class="border-rose-600 bg-rose-50 text-rose-600">
-            A simple error alert—check it out!
+          <div class="border-indigo-800 bg-indigo-200 text-indigo-800">
+            This is an alert!
           </div>
         </section>
-
-        <h2 class="text-2xl font-semibold text-white">Simple Icon Alerts</h2>
-        <section class="my-2 *:my-5 *:rounded-md *:border *:py-3 *:pl-4 *:pr-6">
-          <div class="border-cyan-50 bg-cyan-600 text-cyan-50">
+        <h2 class="text-2xl font-semibold">Border hover effect Alerts:</h2>
+        <section class="*:mx-3 *:my-2 *:border-2 *:border-solid *:px-4 *:py-2">
+          <div
+            class="border-yellow-200 bg-yellow-800 text-yellow-200 hover:border-dashed hover:border-yellow-950"
+          >
+            This is an alert!
+          </div>
+          <div
+            class="border-cyan-200 bg-cyan-500 text-cyan-800 hover:border-dashed hover:border-cyan-950"
+          >
+            This is an alert!
+          </div>
+          <div
+            class="border-rose-200 bg-rose-800 text-gray-200 hover:border-dashed hover:border-rose-950"
+          >
+            This is an alert!
+          </div>
+          <div
+            class="border-green-200 bg-green-800 text-green-200 hover:border-dashed hover:border-green-950"
+          >
+            This is an alert!
+          </div>
+          <div
+            class="border-indigo-200 bg-indigo-800 text-indigo-200 hover:border-dashed hover:border-indigo-950"
+          >
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">Icons Alerts:</h2>
+        <section
+          class="*:mx-3 *:my-2 *:flex *:border *:border-solid *:px-4 *:py-2"
+        >
+          <div class="border-yellow-200 bg-yellow-800 text-yellow-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              class="float-start mr-1 fill-cyan-50"
+              class="fill-yellow-200"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-cyan-200 bg-cyan-500 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-200"
             >
               <path
                 d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
               />
             </svg>
-            A simple info alert—check it out!
+            This is an alert!
           </div>
-          <div class="border-yellow-50 bg-yellow-600 text-yellow-50">
+          <div class="border-rose-200 bg-rose-800 text-gray-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              class="float-start mr-1 fill-yellow-50"
+              class="fill-rose-200"
             >
               <path
-                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-50Z"
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
               />
             </svg>
-            A simple warning alert—check it out!
+            This is an alert!
           </div>
-          <div class="border-green-50 bg-green-600 text-green-50">
+          <div class="border-green-200 bg-green-800 text-green-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              class="float-start mr-1 fill-green-50"
+              class="fill-green-200"
             >
               <path
-                d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
               />
             </svg>
-            A simple success alert—check it out!
+            This is an alert!
           </div>
-          <div class="border-rose-50 bg-rose-600 text-rose-50">
+          <div class="border-indigo-200 bg-indigo-800 text-indigo-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              class="float-start mr-1 fill-rose-50"
+              class="fill-indigo-200"
             >
               <path
-                d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q54 0 104-17.5t92-50.5L228-676q-33 42-50.5 92T160-480q0 134 93 227t227 93Zm252-124q33-42 50.5-92T800-480q0-134-93-227t-227-93q-54 0-104 17.5T284-732l448 448Z"
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
               />
             </svg>
-            A simple error alert—check it out!
+            This is an alert!
           </div>
         </section>
-
-        <h2 class="text-2xl font-semibold text-white">Outline Icon Alerts</h2>
-        <section class="my-2 *:my-5 *:rounded-md *:border *:py-3 *:pl-4 *:pr-6">
-          <div class="border-cyan-600 bg-cyan-50 text-cyan-600">
+        <h2 class="text-2xl font-semibold">Outline Icons Alerts:</h2>
+        <section
+          class="*:mx-3 *:my-2 *:flex *:border *:border-solid *:px-4 *:py-2"
+        >
+          <div class="border-yellow-800 bg-yellow-200 text-yellow-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              class="float-start mr-1 fill-cyan-600"
+              class="fill-yellow-800"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-cyan-800 bg-cyan-200 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-800"
             >
               <path
                 d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
               />
             </svg>
-            A simple info alert—check it out!
+            This is an alert!
           </div>
-          <div class="border-yellow-600 bg-yellow-50 text-yellow-600">
+          <div class="border-rose-800 bg-rose-200 text-rose-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              class="float-start mr-1 fill-yellow-600"
+              class="fill-rose-800"
             >
               <path
-                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-50Z"
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
               />
             </svg>
-            A simple warning alert—check it out!
+            This is an alert!
           </div>
-          <div class="border-green-600 bg-green-50 text-green-600">
+          <div class="border-green-800 bg-green-200 text-green-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              class="float-start mr-1 fill-green-600"
+              class="fill-green-800"
             >
               <path
-                d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
               />
             </svg>
-            A simple success alert—check it out!
+            This is an alert!
           </div>
-          <div class="border-rose-600 bg-rose-50 text-rose-600">
+          <div class="border-indigo-800 bg-indigo-200 text-indigo-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              class="float-start mr-1 fill-rose-600"
+              class="fill-indigo-800"
             >
               <path
-                d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q54 0 104-17.5t92-50.5L228-676q-33 42-50.5 92T160-480q0 134 93 227t227 93Zm252-124q33-42 50.5-92T800-480q0-134-93-227t-227-93q-54 0-104 17.5T284-732l448 448Z"
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
               />
             </svg>
-            A simple error alert—check it out!
+            This is an alert!
           </div>
         </section>
-
-        <h2 class="text-2xl font-semibold text-white">
-          Simple Alerts Close Button
+        <h2 class="text-2xl font-semibold">
+          Color change on Hover Icons Alerts:
         </h2>
-        <section class="my-2 *:my-5 *:rounded-md *:border *:px-4 *:py-3">
-          <div class="border-cyan-50 bg-cyan-600 text-cyan-50">
-            A simple info alert—check it out!
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 cursor-pointer rounded-md bg-cyan-50 fill-cyan-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </div>
-          <div class="border-yellow-50 bg-yellow-600 text-yellow-50">
-            A simple warning alert—check it out!
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 cursor-pointer rounded-md bg-yellow-50 fill-yellow-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </div>
-          <div class="border-green-50 bg-green-600 text-green-50">
-            A simple success alert—check it out!
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 cursor-pointer rounded-md bg-green-50 fill-green-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </div>
-          <div class="border-rose-50 bg-rose-600 text-rose-50">
-            A simple error alert—check it out!
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 cursor-pointer rounded-md bg-rose-50 fill-rose-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </div>
-        </section>
-        <h2 class="text-2xl font-semibold text-white">Simple Icon Alertss</h2>
         <section
-          class="my-2 *:my-5 *:text-balance *:rounded-md *:border *:px-4 *:py-3"
-        >
-          <div class="border-cyan-50 bg-cyan-600 text-cyan-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-left mr-1 fill-cyan-50"
-            >
-              <path
-                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 cursor-pointer rounded-md bg-cyan-50 fill-cyan-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-            A simple info alert—check it out!
-          </div>
-          <div class="border-yellow-50 bg-yellow-600 text-yellow-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-left mr-1 fill-yellow-50"
-            >
-              <path
-                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-50Z"
-              />
-            </svg>
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 cursor-pointer rounded-md bg-yellow-50 fill-yellow-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-            A simple warning alert—check it out!
-          </div>
-          <div class="border-green-50 bg-green-600 text-green-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-left mr-1 fill-green-50"
-            >
-              <path
-                d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 cursor-pointer rounded-md bg-green-50 fill-green-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-            A simple success alert—check it out!
-          </div>
-          <div class="border-rose-50 bg-rose-600 text-rose-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-left mr-1 fill-rose-50"
-            >
-              <path
-                d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q54 0 104-17.5t92-50.5L228-676q-33 42-50.5 92T160-480q0 134 93 227t227 93Zm252-124q33-42 50.5-92T800-480q0-134-93-227t-227-93q-54 0-104 17.5T284-732l448 448Z"
-              />
-            </svg>
-            <!-- onload="setTimeout(() => this.parentElement.remove(), 4000)" -->
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 cursor-pointer rounded-md bg-rose-50 fill-rose-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-            A simple error alert—check it out!
-          </div>
-        </section>
-        <h2 class="text-2xl font-semibold text-white">Simple Icon Alerts</h2>
-        <section
-          class="my-2 *:my-5 *:flex *:items-center *:gap-x-2 *:rounded-md *:border *:border-dashed *:py-3 *:pl-4 *:pr-6"
-        >
-          <div class="border-cyan-50 bg-cyan-600 text-cyan-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="fill-cyan-50"
-            >
-              <path
-                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            A simple info alert—check it out!
-            <div class="grow"></div>
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="cursor-pointer rounded-md bg-cyan-50 fill-cyan-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </div>
-          <div class="border-yellow-50 bg-yellow-600 text-yellow-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="fill-yellow-50"
-            >
-              <path
-                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-50Z"
-              />
-            </svg>
-            A simple warning alert—check it out!
-            <div class="grow"></div>
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="cursor-pointer rounded-md bg-yellow-50 fill-yellow-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </div>
-          <div class="border-green-50 bg-green-600 text-green-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="fill-green-50"
-            >
-              <path
-                d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            A simple success alert—check it out!
-            <div class="grow"></div>
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="cursor-pointer rounded-md bg-green-50 fill-green-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </div>
-          <div class="border-rose-50 bg-rose-600 text-rose-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="fill-rose-50"
-            >
-              <path
-                d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q54 0 104-17.5t92-50.5L228-676q-33 42-50.5 92T160-480q0 134 93 227t227 93Zm252-124q33-42 50.5-92T800-480q0-134-93-227t-227-93q-54 0-104 17.5T284-732l448 448Z"
-              />
-            </svg>
-            A simple error alert—check it out!
-            <div class="grow"></div>
-            <!-- onload="setTimeout(() => this.parentElement.remove(), 4000)" -->
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="cursor-pointer rounded-md bg-rose-50 fill-rose-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </div>
-        </section>
-        <h2 class="text-2xl font-semibold text-white">Simple Icon Alerts</h2>
-        <section class="my-2 *:my-5 *:gap-x-2 *:border-y *:px-4 *:py-3">
-          <div class="border-cyan-50 bg-cyan-600 text-cyan-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-left mr-1 fill-cyan-50"
-            >
-              <path
-                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-              />
-            </svg>
-            <div class="grow"></div>
-            <svg
-              onclick="this.parentElement.remove()"
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 cursor-pointer rounded-md bg-cyan-50 fill-cyan-600"
-            >
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-            A simple info alert—check it out!
-          </div>
-        </section>
-        <h2 class="text-2xl font-semibold text-white">Link Alerts</h2>
-        <section
-          class="my-2 *:my-5 *:rounded-md *:border *:border-dashed *:px-4 *:py-3"
-        >
-          <a
-            href=""
-            class="block border-cyan-600 bg-cyan-50 text-cyan-600 transition hover:border-solid hover:shadow hover:shadow-cyan-600"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-left mr-1 fill-cyan-600"
-            >
-              <path
-                d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q54 0 104-17.5t92-50.5L228-676q-33 42-50.5 92T160-480q0 134 93 227t227 93Zm252-124q33-42 50.5-92T800-480q0-134-93-227t-227-93q-54 0-104 17.5T284-732l448 448Z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              class="float-right ml-1 fill-cyan-600"
-            >
-              <path
-                d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"
-              />
-            </svg>
-            A simple error alert—check it out!
-          </a>
-        </section>
-
-        <section
-          class="my-2 *:my-5 *:rounded-md *:border *:border-dashed *:px-4 *:py-3"
+          class="*:mx-3 *:my-2 *:flex *:border *:border-solid *:px-4 *:py-2"
         >
           <div
-            class="flex items-center gap-1.5 border-gray-50 bg-gray-600 text-gray-50"
+            class="group border-yellow-200 bg-yellow-800 text-yellow-200 hover:bg-yellow-200 hover:text-yellow-800"
           >
-            A simple light alert—check it out!
-            <div class="grow"></div>
-
-            <button
-              class="font-semibold text-cyan-600 underline underline-offset-2"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-yellow-200 group-hover:fill-yellow-800"
             >
-              action 1
-            </button>
-            <button class="underline-offset-2 hover:underline">action 2</button>
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
           </div>
           <div
-            class="flex items-center gap-1.5 border-gray-50 bg-gray-600 text-gray-50"
+            class="group border-cyan-200 bg-cyan-500 text-cyan-800 hover:bg-cyan-200 hover:text-cyan-800"
           >
-            A simple light alert—check it out!
-            <div class="grow"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-200 group-hover:fill-cyan-800"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="group border-rose-200 bg-rose-800 text-rose-200 hover:bg-rose-200 hover:text-rose-800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-rose-200 group-hover:fill-rose-800"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="group border-green-200 bg-green-800 text-green-200 hover:bg-green-200 hover:text-green-800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-green-200 group-hover:fill-green-800"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="group border-indigo-200 bg-indigo-800 text-indigo-200 hover:bg-indigo-200 hover:text-indigo-800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-indigo-200 group-hover:fill-indigo-800"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">
+          Color change on hover Outline Icons Alerts:
+        </h2>
+        <section
+          class="*:mx-3 *:my-2 *:flex *:border *:border-solid *:px-4 *:py-2"
+        >
+          <div
+            class="group border-yellow-800 bg-yellow-200 text-yellow-800 hover:border-yellow-200 hover:bg-yellow-800 hover:text-yellow-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-yellow-800 group-hover:fill-yellow-200"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="group border-cyan-800 bg-cyan-200 text-cyan-800 hover:border-cyan-200 hover:bg-cyan-800 hover:text-cyan-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-800 group-hover:fill-cyan-200"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="group border-rose-800 bg-rose-200 text-rose-800 hover:border-rose-200 hover:bg-rose-800 hover:text-rose-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-rose-800 group-hover:fill-rose-200"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="group border-green-800 bg-green-200 text-green-800 hover:border-green-200 hover:bg-green-800 hover:text-green-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-green-800 group-hover:fill-green-200"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="group border-indigo-800 bg-indigo-200 text-indigo-800 hover:border-indigo-200 hover:bg-indigo-800 hover:text-indigo-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-indigo-800 group-hover:fill-indigo-200"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">Remove Icon Alerts:</h2>
+        <section class="*:mx-3 *:my-2 *:border *:border-solid *:px-4 *:py-2">
+          <div
+            class="text-balance border-yellow-200 bg-yellow-800 text-yellow-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-yellow-200"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-yellow-200 fill-yellow-700 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="text-balance border-cyan-200 bg-cyan-500 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-cyan-200"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-cyan-200 fill-cyan-800 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="text-balance border-rose-200 bg-rose-800 text-gray-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-rose-200"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-rose-200 fill-rose-800 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="text-balance border-green-200 bg-green-800 text-green-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-green-200"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-green-200 fill-green-800 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="text-balance border-indigo-200 bg-indigo-800 text-indigo-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-indigo-200"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-indigo-200 fill-indigo-800 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">On click Remove Icon Alerts:</h2>
+        <section class="*:mx-3 *:my-2 *:border *:border-solid *:px-4 *:py-2">
+          <div
+            class="text-balance border-yellow-200 bg-yellow-800 text-yellow-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-yellow-200"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            <svg
+              onclick="this.parentElement.remove()"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-yellow-200 fill-yellow-700 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="text-balance border-cyan-200 bg-cyan-500 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-cyan-200"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            <svg
+              onclick="this.parentElement.remove()"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-cyan-200 fill-cyan-800 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="text-balance border-rose-200 bg-rose-800 text-gray-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-rose-200"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            <svg
+              onclick="this.parentElement.remove()"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-rose-200 fill-rose-800 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="text-balance border-green-200 bg-green-800 text-green-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-green-200"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            <svg
+              onclick="this.parentElement.remove()"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-green-200 fill-green-800 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="text-balance border-indigo-200 bg-indigo-800 text-indigo-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-indigo-200"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            <svg
+              onclick="this.parentElement.remove()"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right rounded-md bg-indigo-200 fill-indigo-800 shadow-md"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">Outward arrow Icons Alerts:</h2>
+        <section class="*:mx-3 *:my-2 *:border *:border-solid *:px-4 *:py-2">
+          <div
+            class="text-balance border-yellow-200 bg-yellow-800 text-yellow-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right ml-1 fill-yellow-200"
+            >
+              <path
+                d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-yellow-200"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="text-balance border-cyan-200 bg-cyan-500 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right ml-1 fill-cyan-200"
+            >
+              <path
+                d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-cyan-200"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="text-balance border-rose-200 bg-rose-800 text-gray-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right ml-1 fill-rose-200"
+            >
+              <path
+                d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-rose-200"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-green-200 bg-green-800 text-green-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right ml-1 fill-green-200"
+            >
+              <path
+                d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-green-200"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="text-balance border-indigo-200 bg-indigo-800 text-indigo-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-right ml-1 fill-indigo-200"
+            >
+              <path
+                d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-indigo-200"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">Action Icons Alerts:</h2>
+        <section
+          class="*: container justify-between *:mx-auto *:my-2 *:flex *:border *:border-solid *:px-4 *:py-2"
+        >
+          <div
+            class="text-balance border-yellow-200 bg-yellow-800 text-yellow-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-yellow-200"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
 
-            <button
-              class="rounded bg-slate-900 px-1.5 py-0.5 font-semibold text-cyan-600"
+            This is an alert!
+            <div
+              class="flex items-center gap-2 underline underline-offset-2 *:border"
             >
-              action 1
-            </button>
-            <button
-              class="rounded px-1.5 py-0.5 font-semibold hover:bg-slate-900 hover:text-cyan-600"
+              <button class="rounded border-cyan-200 bg-cyan-950 text-cyan-200">
+                action1
+              </button>
+              <button
+                class="rounded hover:border-cyan-200 hover:bg-cyan-950 hover:text-cyan-200"
+              >
+                action2
+              </button>
+            </div>
+          </div>
+          <div class="border-cyan-200 bg-cyan-500 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-200"
             >
-              action 2
-            </button>
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+            <div
+              class="flex items-center gap-2 underline underline-offset-2 *:border"
+            >
+              <button
+                class="rounded border-purple-200 bg-purple-950 text-purple-200"
+              >
+                action1
+              </button>
+              <button
+                class="rounded hover:border-purple-200 hover:bg-purple-950 hover:text-purple-200"
+              >
+                action2
+              </button>
+            </div>
+          </div>
+          <div class="border-rose-200 bg-rose-800 text-gray-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-rose-200"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+            <div
+              class="flex items-center gap-2 underline underline-offset-2 *:border"
+            >
+              <button
+                class="rounded border-slate-200 bg-slate-950 text-slate-200"
+              >
+                action1
+              </button>
+              <button
+                class="rounded hover:border-slate-200 hover:bg-slate-950 hover:text-slate-200"
+              >
+                action2
+              </button>
+            </div>
+          </div>
+          <div class="border-green-200 bg-green-800 text-green-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-green-200"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            This is an alert!
+            <div
+              class="flex items-center gap-2 underline underline-offset-2 *:border"
+            >
+              <button
+                class="rounded border-yellow-200 bg-yellow-950 text-yellow-200"
+              >
+                action1
+              </button>
+              <button
+                class="rounded hover:border-yellow-200 hover:bg-yellow-950 hover:text-yellow-200"
+              >
+                action2
+              </button>
+            </div>
+          </div>
+          <div class="border-indigo-200 bg-indigo-800 text-indigo-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-indigo-200"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            This is an alert!
+            <div
+              class="flex items-center gap-2 underline underline-offset-2 *:border"
+            >
+              <button class="rounded border-gray-200 bg-gray-950 text-gray-200">
+                action1
+              </button>
+              <button
+                class="rounded hover:border-gray-200 hover:bg-gray-950 hover:text-gray-200"
+              >
+                action2
+              </button>
+            </div>
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">
+          Different Borders Outline Icons Alerts:
+        </h2>
+        <section
+          class="*:mx-3 *:my-2 *:flex *:border-2 *:border-x *:border-dashed *:px-4 *:py-2"
+        >
+          <div class="border-yellow-800 bg-yellow-200 text-yellow-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-yellow-800"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-cyan-800 bg-cyan-200 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-800"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-rose-800 bg-rose-200 text-rose-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-rose-800"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-green-800 bg-green-200 text-green-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-green-800"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-indigo-800 bg-indigo-200 text-indigo-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-indigo-800"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">
+          Top Accent Border Outline Icons Alerts:
+        </h2>
+        <section
+          class="*:mx-3 *:my-2 *:flex *:border-t-4 *:border-solid *:px-4 *:py-2"
+        >
+          <div class="border-yellow-800 bg-yellow-200 text-yellow-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-yellow-800"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-cyan-950 bg-cyan-200 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-800"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-rose-800 bg-rose-200 text-rose-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-rose-800"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-green-950 bg-green-200 text-green-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-green-800"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-indigo-950 bg-indigo-200 text-indigo-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-indigo-800"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">
+          Left Accent Border Outline Icons Alerts:
+        </h2>
+        <section
+          class="*:mx-3 *:my-2 *:flex *:border-l-4 *:border-solid *:px-4 *:py-2"
+        >
+          <div class="border-yellow-800 bg-yellow-200 text-yellow-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-yellow-800"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-cyan-950 bg-cyan-200 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-800"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-rose-800 bg-rose-200 text-rose-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-rose-800"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-green-950 bg-green-200 text-green-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-green-800"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-indigo-950 bg-indigo-200 text-indigo-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-indigo-800"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">Banner Alerts:</h2>
+        <section
+          class="*:mx-3 *:my-2 *:flex *:border-y-4 *:border-solid *:px-4 *:py-2"
+        >
+          <div class="border-yellow-800 bg-yellow-200 text-yellow-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-yellow-800"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-cyan-950 bg-cyan-200 text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-800"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-rose-800 bg-rose-200 text-rose-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-rose-800"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-green-950 bg-green-200 text-green-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-green-800"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-indigo-950 bg-indigo-200 text-indigo-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-indigo-800"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+        </section>
+        <h2 class="text-2xl font-semibold">Auto close Alerts:</h2>
+        <section class="mx-4 border border-solid border-yellow-200">
+          <div class="bg-yellow-900 text-yellow-200">
+            <svg
+              onload="setTimeout(()=>this.parentElement.remove(),9000)"
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="float-left mr-1 fill-yellow-200"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div id="autoRemove"></div>
+        </section>
+        <h2 class="text-2xl font-semibold">Solid Icons Alerts:</h2>
+        <section
+          class="*:mx-3 *:my-2 *:flex *:border *:border-solid *:px-4 *:py-2"
+        >
+          <div
+            class="border-yellow-800 bg-yellow-800 font-semibold text-yellow-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-yellow-200"
+            >
+              <path
+                d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-cyan-500 bg-cyan-500 font-semibold text-cyan-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-cyan-200"
+            >
+              <path
+                d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div class="border-rose-800 bg-rose-800 font-semibold text-gray-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-rose-200"
+            >
+              <path
+                d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="border-green-800 bg-green-800 font-semibold text-green-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-green-200"
+            >
+              <path
+                d="m381-240 424-424-57-56-368 367-169-170-57 57 227 226Zm0 113L42-466l169-170 170 170 366-367 172 168-538 538Z"
+              />
+            </svg>
+            This is an alert!
+          </div>
+          <div
+            class="border-indigo-800 bg-indigo-800 font-semibold text-indigo-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              class="fill-indigo-200"
+            >
+              <path
+                d="M480-120q-151 0-255.5-46.5T120-280v-400q0-66 105.5-113T480-840q149 0 254.5 47T840-680v400q0 67-104.5 113.5T480-120Zm0-479q89 0 179-25.5T760-679q-11-29-100.5-55T480-760q-91 0-178.5 25.5T200-679q14 30 101.5 55T480-599Zm0 199q42 0 81-4t74.5-11.5q35.5-7.5 67-18.5t57.5-25v-120q-26 14-57.5 25t-67 18.5Q600-528 561-524t-81 4q-42 0-82-4t-75.5-11.5Q287-543 256-554t-56-25v120q25 14 56 25t66.5 18.5Q358-408 398-404t82 4Zm0 200q46 0 93.5-7t87.5-18.5q40-11.5 67-26t32-29.5v-98q-26 14-57.5 25t-67 18.5Q600-328 561-324t-81 4q-42 0-82-4t-75.5-11.5Q287-343 256-354t-56-25v99q5 15 31.5 29t66.5 25.5q40 11.5 88 18.5t94 7Z"
+              />
+            </svg>
+            This is an alert!
           </div>
         </section>
       </main>
+      <aside
+        class="min-w-72 overflow-y-auto bg-cyan-800"
+        style="height: calc(100vh-56px)"
+      ></aside>
     </div>
-    <footer></footer>
   </body>
 </html>
